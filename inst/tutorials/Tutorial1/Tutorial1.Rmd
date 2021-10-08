@@ -6,11 +6,22 @@ runtime: shiny_prerendered
 
 ```{r setup, include=FALSE}
 library(learnr)
-library(ggplot2)
-library(summarytools)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+```{r packages, include=FALSE}
+library(readr)
+library(ggplot2)
+library(summarytools)
+```
+
+
+```{r data, include=FALSE}
+data_election=read_csv("https://raw.githubusercontent.com/DanatV/Data/main/election_one.csv")
+data_election_one=read_csv("https://raw.githubusercontent.com/DanatV/Data/main/data_election_1.csv")
+data_usa_one=read_csv("https://raw.githubusercontent.com/DanatV/Data/main/election_usa.csv")
+data_usa=read_csv("https://raw.githubusercontent.com/DanatV/Data/main/election_usa_1.csv")
+```
 
 This interactive tutorial provides a gentle introduction to the capabilities of R, a software environment for statistical computing and analysis. We shall look into different ways to visualise statistical distributions. The focus of this session on datasets commonly used in political science. Specifically, we wil utilise elections data from an autocratic country and a country with established institutions of participatory democracy. Using relatively straightforward analytical and visualisation tools, we shall spots interesting abnormalities in the distribution of the election data and will try to explain them.
 
