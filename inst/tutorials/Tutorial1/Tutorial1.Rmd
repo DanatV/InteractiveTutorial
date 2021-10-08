@@ -17,14 +17,6 @@ This interactive tutorial provides a gentle introduction to the capabilities of 
 We will use ggplot2, a highly versatile package for data visualisation in R. (https://ggplot2.tidyverse.org).
 
 
-```{r, include=FALSE}
-data_election=read.csv('election_one.csv')
-data_election_one=read.csv('data_election_1.csv')
-data_usa_one=read.csv('election_usa.csv')
-data_usa=read.csv('election_usa_1.csv')
-```
-
-
 ## Statistical distributions: General election data
 
 Four datasets have been uploaded for this tutorial: two datasets from an autocratic country (in wide and long formats) and two datasets from the 2016 US presidential election (in wide and long formats). The data objects have been created and labelled as follows:
